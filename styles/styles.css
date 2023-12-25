@@ -1,0 +1,230 @@
+@font-face {
+    font-family: 'type-keys';
+    src: url('../fonts/typekeys-e1kl-webfont.woff2') format('woff2'),
+         url('../fonts/typekeys-e1kl-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'filled-type-keys';
+    src: url('../fonts/typekeysfilled-wjkg-webfont.woff2') format('woff2'),
+         url('../fonts/typekeysfilled-wjkg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'jdirregutype';
+    src: url('../fonts/jdirregutype-93z7-webfont.woff2') format('woff2'),
+         url('../fonts/jdirregutype-93z7-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'indifference';
+    src: url('../fonts/indifference-jye7-webfont.woff2') format('woff2'),
+         url('../fonts/indifference-jye7-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'caslon';
+    src: url('../fonts/CaslonAntique-WJV.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'caslon-italic';
+    src: url('../fonts/CaslonAntiqueItalic-aaa.woff') format('woff');
+    font-style: italic;
+}
+
+
+
+:root {
+    --darkblue: #321575;
+    --darkpurple: #59088c;
+    --darkbrown: #4a2e01;
+    --darkgold: #ffc823;
+    --mediumteal: #428988;
+    --lightteal: #05C6C3;
+    --lightgold: #dbb355;
+    --mediumbrown: #845914;
+    --mediumgold: #B58A26;
+    --lightbrown: #AE7D13;
+    --shadowbrown: #20201a;
+    --darkteal: #003333;
+    --darkergold: #e6ac00;
+    --darkerpurple: #3e0660; 
+    --darkerbrown: #321f01; 
+
+}
+
+body {
+    background-color: var(--darkerbrown);
+}
+
+h1 {
+    margin: 20px 50px;
+    padding: 5% 10%;
+    background-color: var(--darkteal);
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--darkergold);
+    border-radius: 50%;
+    text-align: center;
+    color: var(--mediumgold);
+    text-shadow: 5px 5px var(--shadowbrown);
+    font-family: 'filled-type-keys', Georgia, 'Times New Roman', Times, serif;
+    font-size: 10em;
+}
+
+
+h2 {
+    color: var(--darkgold);
+    padding: none;
+    margin: 10px;
+    font-family: 'indifference', Georgia, 'Times New Roman', Times, serif;
+    font-size: 6em;
+    text-shadow: 2px 2px 0 var(--shadowbrown),
+                -2px 2px 0 var(--shadowbrown),
+                -2px 2px 0 var(--shadowbrown),
+                2px -2px 0 var(--shadowbrown);
+    text-align: center;
+}
+
+h3 {
+    background-color: var(--darkerpurple);
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--darkergold);
+    border-radius: 25%;
+    margin: 10px 250px;
+    padding: 50px;
+    text-align: center;
+    color: var(--darkergold);
+    font-size: 2.5em;
+    font-family: 'caslon', serif;
+    text-shadow: 2px 2px 0 var(--shadowbrown),
+    -2px 2px 0 var(--shadowbrown),
+    -2px 2px 0 var(--shadowbrown),
+    2px -2px 0 var(--shadowbrown);
+    
+}
+
+li h3 {
+    background-color: var(--darkteal);
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--darkergold);
+    border-radius: 25%;
+    margin: 10px 250px;
+    padding: 50px;
+    text-align: center;
+    color: var(--darkergold);
+    font-size: 2.5em;
+    font-family: 'caslon', serif;
+    text-shadow: 2px 2px 0 var(--shadowbrown),
+    -2px 2px 0 var(--shadowbrown),
+    -2px 2px 0 var(--shadowbrown),
+    2px -2px 0 var(--shadowbrown);
+    
+}
+
+hr {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: var(--darkergold);
+    border-width: 2px 0 0 0;
+    border-radius: 20px;
+}
+hr:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: var(--darkergold);
+    border-width: 0 0 2px 0;
+    border-radius: 20px;
+}
+
+p {
+    color: var(--lightgold);
+    font-family:'caslon-italic', Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    text-shadow: 2px 2px 0 var(--shadowbrown),
+    -2px 2px 0 var(--shadowbrown),
+    -2px 2px 0 var(--shadowbrown),
+    2px -2px 0 var(--shadowbrown);
+}
+
+li p {
+    color: var(--lightgold) !important;
+    font-family:'caslon-italic', Georgia, 'Times New Roman', Times, serif !important;
+    font-style: italic;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 0 var(--shadowbrown),
+    -2px 2px 0 var(--shadowbrown),
+    -2px 2px 0 var(--shadowbrown),
+    2px -2px 0 var(--shadowbrown);
+}
+
+
+a:link {
+    color: var(--lightteal);
+    font-family:'caslon-italic', Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    
+}
+a:visited {
+    color: var(--mediumteal);
+    font-family:'caslon-italic', Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    text-shadow: 2px 2px 0 var(--darkpurple),
+    -2px 2px 0 var(--darkpurple),
+    -2px 2px 0 var(--darkpurple),
+    2px -2px 0 var(--darkpurple);
+}
+a:hover {
+    color: var(--mediumteal);
+    font-family:'caslon-italic', Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 0 var(--lightteal),
+    -1px 1px 0 var(--lightteal),
+    -1px 1px 0 var(--lightteal),
+    1px -1px 0 var(--lightteal);
+}
+a:active {
+        color: var(--lightteal);
+        font-family:'caslon-italic', Georgia, 'Times New Roman', Times, serif;
+        font-size: 1.5em;
+        text-shadow: 1px 1px 0 var(--darkpurple),
+        -1px 1px 0 var(--darkpurple),
+        -1px 1px 0 var(--darkpurple),
+        1px -1px 0 var(--darkpurple);
+}
+
+
+div {
+    background-color: var(--darkbrown);
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--mediumgold);
+    border-radius: 10%;
+    margin: 20px 50px;
+    padding: 50px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }

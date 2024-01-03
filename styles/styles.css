@@ -69,17 +69,17 @@ body {
 }
 
 h1 {
-    margin: 20px 50px;
+    margin: 20px 150px;
     padding: 10px 50px;
     background-color: var(--darkteal);
     border-style: solid;
     border-width: 3px;
     border-color: var(--darkergold);
-    border-radius: 50%;
+    border-radius: 25%;
     text-align: center;
     color: var(--mediumgold);
     text-shadow: 5px 5px var(--shadowbrown);
-    font-family: 'filled-type-keys', Georgia, 'Times New Roman', Times, serif;
+    font-family: 'type-keys', Georgia, 'Times New Roman', Times, serif;
     font-size: 6em;
 }
 
